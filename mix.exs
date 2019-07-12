@@ -12,6 +12,13 @@ defmodule Certbot.MixProject do
       name: "Certbot",
       source_url: "https://github.com/maartenvanvliet/certbot",
       homepage_url: "https://github.com/maartenvanvliet/certbot",
+      description: "Provide dynamic ssl-certificates for your Phoenix or Plug app using Letsencrypt",
+      package: [
+        maintainers: ["Maarten van Vliet"],
+        licenses: ["MIT"],
+        links: %{"GitHub" => "https://github.com/maartenvanvliet/certbot"},
+        files: ~w(LICENSE README.md lib mix.exs)
+      ],
       docs: [
         main: "Certbot",
         canonical: "http://hexdocs.pm/certbot",

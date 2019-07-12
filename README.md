@@ -44,7 +44,7 @@ defmodule Myapp.CertbotClient do
   use Certbot,
     certificate_provider: Myapp.AcmeCertificateProvider,
     jwk: @jwk,
-    email: "mailto:test@example.com
+    email: "mailto:test@example.com"
 end
 
 defmodule Myapp.AcmeCertificateProvider do

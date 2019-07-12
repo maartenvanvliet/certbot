@@ -1,4 +1,5 @@
 # Certbot
+[![Build Status](https://travis-ci.com/maartenvanvliet/certbot.svg?branch=master)](https://travis-ci.com/maartenvanvliet/certbot) [![Hex pm](http://img.shields.io/hexpm/v/certbot.svg?style=flat)](https://hex.pm/packages/certbot) [![Hex Docs](https://img.shields.io/badge/hex-docs-9768d1.svg)](https://hexdocs.pm/certbot) [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 -----
 
 Provide certificates for your Phoenix or Plug app using Letsencrypt.

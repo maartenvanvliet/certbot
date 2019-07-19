@@ -48,13 +48,14 @@ defmodule Certbot.Acme.Plug do
   end
 
   defp reply_challenge(conn, token, {challenge_store, jwk}) do
-    with {:ok, challenge} <- challenge_store.find_by_token(token) do
-      authorization = Challenge.authorization(challenge, jwk)
+    case challenge_store.find_by_token(token) do
+      {:ok, challenge} ->
+        authorization = Challenge.authorization(challenge, jwk)
 
-      conn
-      |> Plug.Conn.send_resp(200, authorization)
-      |> Plug.Conn.halt()
-    else
+        conn
+        |> Plug.Conn.send_resp(200, authorization)
+        |> Plug.Conn.halt()
+
       _ ->
         conn
         |> Plug.Conn.send_resp(404, "Not found")

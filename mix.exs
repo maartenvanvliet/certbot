@@ -40,7 +40,7 @@ defmodule Certbot.MixProject do
   defp deps do
     [
       {:acme, "~> 0.5.1"},
-      {:x509, "~> 0.6.0"},
+      {:x509, "~> 0.7.0"},
       {:ex_doc, "~> 0.21.0", only: :dev},
       {:plug, "~> 1.7"},
       {:jose, "~> 1.8"},

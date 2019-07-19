@@ -41,7 +41,7 @@ defmodule Certbot.MixProject do
     [
       {:acme, "~> 0.5.1"},
       {:x509, "~> 0.6.0"},
-      {:ex_doc, "~> 0.20.0", only: :dev},
+      {:ex_doc, "~> 0.21.0", only: :dev},
       {:plug, "~> 1.7"},
       {:jose, "~> 1.8"},
       {:credo, "~> 1.0.0", only: [:dev, :test], runtime: false}
